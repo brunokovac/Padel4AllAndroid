@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/userDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="5"
+            android:padding="2dp"
+            android:background="#c3c9c6">
+
+            <ImageButton
+                android:id="@+id/userMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/tennis_ball_icon"/>
+
+            <TextView
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userMyProfileButton"
+                android:text="Moj profil"
+                android:layout_columnWeight="1"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userLogoutButton"
+                android:text="Odjava"
+                android:layout_columnWeight="1"
+                android:textColor="@android:color/white" />
+
+        </GridLayout>
+
+        <FrameLayout
+            android:id="@+id/user_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/userNavigation"
+        app:headerLayout="@layout/navigation_header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/user_drawer"/>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/gameRequestItemNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_edittext"
+        android:textSize="18dp"
+        android:textColor="#cfc2c2"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:longClickable="false"/>
+
+    <EditText
+        android:id="@+id/gameRequestItemLocationField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/login_edittext"
+        android:textSize="18dp"
+        android:textColor="#cfc2c2"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:longClickable="false"/>
+
+    <EditText
+        android:id="@+id/gameRequestItemStartField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/login_edittext"
+        android:textSize="18dp"
+        android:textColor="#cfc2c2"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:longClickable="false"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/gameRequestItemDeclineButton"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:text="Odbij"
+            android:textColor="#ece7e7"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:background="@drawable/game_cancel_button"/>
+
+        <Button
+            android:id="@+id/gameRequestItemAcceptButton"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:text="Prihvati"
+            android:textColor="#ece7e7"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:background="@drawable/game_lock_button"/>
+
+    </GridLayout>
+
+</LinearLayout>

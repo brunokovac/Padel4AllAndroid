@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.apps4all.android.padel4all.LoginActivity"
+    android:background="#f52c2d2c">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Lokacija (grad)"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/offerGameLocationField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_edittext"
+                android:textSize="18dp"
+                android:textColor="#cfc2c2"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Datum i vrijeme početka"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/offerGameStartField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/login_edittext"
+                    android:text="dd.mm.yy. hh.mm."
+                    android:textSize="18dp"
+                    android:textColor="#cfc2c2"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"/>
+
+                <Button
+                    android:id="@+id/offerGameStartButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Odaberi"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/login_button"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/offerGameDateError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="#ea463f"
+                android:textSize="18dp"
+                android:textStyle="bold|italic"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="Trajanje"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/offerGameDurationField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/login_edittext"
+                    android:textSize="18dp"
+                    android:textColor="#cfc2c2"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"/>
+
+                <ImageButton
+                    android:id="@+id/offerGameDurationUpButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/up_icon"/>
+
+                <ImageButton
+                    android:id="@+id/offerGameDurationDownButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/down_icon"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/offerGameOfferButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="Ponudi"
+                android:textColor="#ece7e7"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:background="@drawable/login_button"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

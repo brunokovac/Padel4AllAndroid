@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "938610699417",
+    "firebase_url": "https://padel4all-52187.firebaseio.com",
+    "project_id": "padel4all-52187",
+    "storage_bucket": "padel4all-52187.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938610699417:android:bb472b9318ed23d6",
+        "android_client_info": {
+          "package_name": "hr.apps4all.android.padel4all"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938610699417-k70ektu3aiu61v8k0c2vun1u772hvoac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd-ds9NUKeXhvlViNe-Nfwhck7jvfes-k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

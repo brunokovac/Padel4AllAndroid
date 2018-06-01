@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Lokacija"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/organzierGameLocationField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_edittext"
+                android:textSize="18dp"
+                android:textColor="#cfc2c2"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:longClickable="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Datum i vrijeme početka"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/organzierGameStartField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_edittext"
+                android:textSize="18dp"
+                android:textColor="#cfc2c2"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:longClickable="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Trajanje"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/organzierGameDurationField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_edittext"
+                android:textSize="18dp"
+                android:textColor="#cfc2c2"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:longClickable="false"/>
+
+            <Button
+                android:id="@+id/organizerGameChatButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Razgovor"
+                android:textColor="#ece7e7"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="14dp"
+                android:background="@drawable/login_button"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:padding="5dp">
+
+                <GridLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#076b13"
+                    android:rowCount="7"
+                    android:columnCount="3">
+
+                    <LinearLayout
+                        android:id="@+id/organizerGamePlayer1Layout"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/player_icon"/>
+
+                        <TextView
+                            android:id="@+id/organizerGamePlayer1InfoField"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16dp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_gravity="fill"/>
+
+                    <TextView
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"/>
+
+                    <TextView
+                        android:layout_height="5dp"
+                        android:layout_gravity="fill"
+                        android:background="#ffffff"/>
+                    <TextView
+                        android:layout_height="5dp"
+                        android:layout_gravity="fill"
+                        android:background="#ffffff"/>
+                    <TextView
+                        android:layout_height="5dp"
+                        android:layout_gravity="fill"
+                        android:background="#ffffff"/>
+
+                    <TextView
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"/>
+
+                    <TextView
+                        android:layout_width="5dp"
+                        android:background="#ffffff"
+                        android:layout_gravity="fill"/>
+
+                    <LinearLayout
+                        android:id="@+id/organizerGamePlayer2Layout"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/player_icon"/>
+
+                        <TextView
+                            android:id="@+id/organizerGamePlayer2InfoField"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="B.K."/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_height="10dp"
+                        android:layout_gravity="fill"
+                        android:background="#111111"/>
+                    <TextView
+                        android:layout_height="10dp"
+                        android:layout_gravity="fill"
+                        android:background="#111111"/>
+                    <TextView
+                        android:layout_height="10dp"
+                        android:layout_gravity="fill"
+                        android:background="#111111"/>
+
+                    <LinearLayout
+                        android:id="@+id/organizerGamePlayer3Layout"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/player_icon"/>
+
+                        <TextView
+                            android:id="@+id/organizerGamePlayer3InfoField"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="B.K."/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="5dp"
+                        android:background="#ffffff"
+                        android:layout_gravity="fill"/>
+
+                    <TextView
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"/>
+
+                    <TextView
+                        android:layout_height="5dp"
+                        android:layout_gravity="fill"
+                        android:background="#ffffff"/>
+                    <TextView
+                        android:layout_height="5dp"
+                        android:layout_gravity="fill"
+                        android:background="#ffffff"/>
+                    <TextView
+                        android:layout_height="5dp"
+                        android:layout_gravity="fill"
+                        android:background="#ffffff"/>
+
+                    <TextView
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"/>
+
+                    <TextView
+                        android:layout_gravity="fill"/>
+
+                    <LinearLayout
+                        android:id="@+id/organizerGamePlayer4Layout"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/player_icon"/>
+
+                        <TextView
+                            android:id="@+id/organizerGamePlayer4InfoField"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="B.K."/>
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/organizerGameInvitationsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Pozovi suigrače"
+                android:textColor="#ece7e7"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="14dp"
+                android:background="@drawable/requests_button"/>
+
+            <Button
+                android:id="@+id/organizerGameRequestsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Zahtjevi"
+                android:textColor="#ece7e7"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="14dp"
+                android:background="@drawable/requests_button"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:columnCount="2">
+
+                <Button
+                    android:id="@+id/organizerGameCancelButton"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:text="Otkaži"
+                    android:textColor="#ece7e7"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:padding="14dp"
+                    android:background="@drawable/game_cancel_button"/>
+
+                <Button
+                    android:id="@+id/organizerGameLockButton"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:text="Zaključaj"
+                    android:textColor="#ece7e7"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:padding="14dp"
+                    android:background="@drawable/game_lock_button"/>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

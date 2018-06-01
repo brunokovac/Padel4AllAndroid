@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.apps4all.android.padel4all.LoginActivity"
+    android:background="#f52c2d2c">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="REGISTRACIJA"
+                android:textColor="#11af4a"
+                android:textSize="28dp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="Korisničko ime"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/registerUsernameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_edittext"
+                android:textSize="18dp"
+                android:textColor="#cfc2c2"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="Lozinka"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/registerPasswordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_edittext"
+                android:textSize="18dp"
+                android:textColor="#cfc2c2"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="Ime"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/registerFirstNameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_edittext"
+                android:textSize="18dp"
+                android:textColor="#cfc2c2"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="Prezime"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/registerLastNameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_edittext"
+                android:textSize="18dp"
+                android:textColor="#cfc2c2"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="Datum rođenja"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <DatePicker
+                android:id="@+id/registerDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="E-mail adresa"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/registerEmailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_edittext"
+                android:textSize="18dp"
+                android:textColor="#cfc2c2"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="Opis"
+                android:textColor="#11af4a"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/registerDescriptionField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/register_description_hint"
+                android:textColorHint="#c3cfc2c2"
+                android:background="@drawable/login_edittext"
+                android:textSize="18dp"
+                android:textColor="#cfc2c2"
+                android:textAlignment="center"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"
+                android:text="Registrirajte se"
+                android:textColor="#ece7e7"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="14dp"
+                android:background="@drawable/login_button"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

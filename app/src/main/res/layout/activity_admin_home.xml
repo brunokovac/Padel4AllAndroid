@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="5"
+            android:padding="2dp"
+            android:background="#c3c9c6">
+
+            <ImageButton
+                android:id="@+id/adminMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/tennis_ball_icon"/>
+
+            <TextView
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill" />
+
+            <TextView
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminLogoutButton"
+                android:text="Odjava"
+                android:layout_columnWeight="1"
+                android:textColor="@android:color/white" />
+
+        </GridLayout>
+
+        <FrameLayout
+            android:id="@+id/admin_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

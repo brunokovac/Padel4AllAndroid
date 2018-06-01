@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Padel4All</string>
+    <string name="register_title"><u>Registrirajte se</u></string>
+    <string name="login_username_hint"><i>Korisničko ime</i></string>
+    <string name="login_password_hint"><i>Lozinka</i></string>
+    <string name="register_description_hint"><i>Opišite ukratko sebe i svoju razinu igre kako bi pomogli i drugim igračima pri pronalaženju suigrača/protivnika</i></string>
+</resources>

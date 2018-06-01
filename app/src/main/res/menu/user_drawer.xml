@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="" />
+
+        <item
+            android:id="@+id/todayGamesItem"
+            android:title="Današnji termini"
+            android:icon="@drawable/games_today_icon"/>
+
+        <item
+            android:id="@+id/offerGameItem"
+            android:title="Ponudi termin"
+            android:icon="@drawable/offer_game_icon"/>
+
+        <item
+            android:id="@+id/findGameItem"
+            android:title="Pronađi termin"
+            android:icon="@drawable/find_game_icon"/>
+
+        <item
+            android:id="@+id/myGamesItem"
+            android:title="Moji termini"
+            android:icon="@drawable/my_games_icon"/>
+
+        <item
+            android:id="@+id/cancellationsItem"
+            android:title="Otkazivanja"
+            android:icon="@drawable/cancel_icon"/>
+
+        <item
+            android:id="@+id/newMessagesItem"
+            android:title="Nepročitane poruke"
+            android:icon="@drawable/new_message_icon"/>
+
+    </group>
+
+</menu>
